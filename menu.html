@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Меню — Окно</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Окно<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false">Меню</button>
+    <nav class="nav">
+      <a href="menu.html" aria-current="page">Меню</a>
+      <a href="booking.html">Бронь</a>
+      <a href="about.html">О нас</a>
+      <a href="events.html">События</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-meta">
+      <span class="hours-pill" data-hours></span>
+      <a class="btn" href="booking.html">Забронировать стол</a>
+    </div>
+  </header>
+
+  <div class="wrap page-hero">
+    <p class="eyebrow">Карта бара и кухни</p>
+    <h1>Меню</h1>
+    <p>Цены как на стойке. Завтраки до 12:00. Если позиция кончилась — её не будет и здесь.</p>
+    <div class="btn-row">
+      <a class="btn" href="booking.html">Забронировать</a>
+      <a class="btn btn-ghost" href="delivery.html">Заказать с собой</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>Кофе</h2>
+      <div class="menu-grid">
+        <article class="menu-card"><div class="body"><h3>Эспрессо</h3><p>25 секунд, 18 г</p><p class="price">220 ₽</p></div></article>
+        <article class="menu-card"><div class="body"><h3>Американо</h3><p>эспрессо и вода</p><p class="price">240 ₽</p></div></article>
+        <article class="menu-card"><div class="body"><h3>Капучино</h3><p>молоко 160 мл</p><p class="price">290 ₽</p></div></article>
+        <article class="menu-card"><div class="body"><h3>Флэт уайт</h3><p>двойной, плотнее</p><p class="price">310 ₽</p></div></article>
+        <article class="menu-card"><div class="body"><h3>Фильтр дня</h3><p>Эфиопия, пока партия живая</p><p class="price">320 ₽</p></div></article>
+        <article class="menu-card"><div class="body"><h3>Раф</h3><p>сливки, ваниль по запросу</p><p class="price">340 ₽</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Кухня</h2>
+      <div class="menu-grid">
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Круассан">
+          <div class="body"><span class="badge">витрина</span><h3>Круассан</h3><p class="price">280 ₽</p></div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" alt="Завтрак">
+          <div class="body"><span class="badge">до 12:00</span><h3>Скрэмбл и тост</h3><p class="price">490 ₽</p></div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&q=80" alt="Тост">
+          <div class="body"><h3>Тост с рикоттой</h3><p class="price">420 ₽</p></div>
+        </article>
+        <article class="menu-card">
+          <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=800&q=80" alt="Гранола">
+          <div class="body"><h3>Гранола и йогурт</h3><p class="price">420 ₽</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="logo" href="index.html">Окно<span>.</span></a>
+        <p>Покровка, 18 · 08:00–22:00</p>
+        <a class="btn" href="https://yandex.ru/maps/?text=Москва%20Покровка%2018" target="_blank" rel="noopener">Построить маршрут</a>
+      </div>
+      <div><p><a href="booking.html">Бронь</a><br><a href="contacts.html">Контакты</a></p></div>
+      <div><p><a href="tel:+74950001808">+7 495 000-18-08</a></p></div>
+    </div>
+  </footer>
+  <div class="sticky-cta"><a class="btn" href="booking.html">Забронировать стол</a></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

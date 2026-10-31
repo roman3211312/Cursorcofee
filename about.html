@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О нас — Окно</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Окно<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false">Меню</button>
+    <nav class="nav">
+      <a href="menu.html">Меню</a>
+      <a href="booking.html">Бронь</a>
+      <a href="about.html" aria-current="page">О нас</a>
+      <a href="events.html">События</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-meta">
+      <span class="hours-pill" data-hours></span>
+      <a class="btn" href="booking.html">Забронировать стол</a>
+    </div>
+  </header>
+
+  <div class="wrap page-hero">
+    <p class="eyebrow">Зал, стойка, люди</p>
+    <h1>Кофейня, в которой слышно кофемолку</h1>
+    <p>Мы не сеть. Один зал на Покровке. Обжарка небольшими партиями, бариста на смене двое, кухня — до 16:00.</p>
+  </div>
+
+  <section>
+    <div class="wrap split">
+      <figure class="photo-frame" style="position:relative;margin:0">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=80" alt="Гости в зале">
+        <figcaption>Замените на фото вашей смены</figcaption>
+      </figure>
+      <div>
+        <h2>Кому сюда</h2>
+        <p>Утром — те, кому нужен фильтр и стол с розеткой. Днём — встречи на 45 минут. Вечером — громче и теснее, так и задумано.</p>
+        <p>Можно с детьми. Собак просим на поводок и не к барной стойке. Wi-Fi есть, пароль на чеке.</p>
+        <a class="btn" href="contacts.html">Как нас найти</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div><a class="logo" href="index.html">Окно<span>.</span></a><p>Покровка, 18</p></div>
+      <div><a href="events.html">События</a></div>
+      <div><a href="journal.html">Журнал</a></div>
+    </div>
+  </footer>
+  <div class="sticky-cta"><a class="btn" href="booking.html">Забронировать стол</a></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

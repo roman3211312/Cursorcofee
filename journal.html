@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Журнал — Окно</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Окно<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false">Меню</button>
+    <nav class="nav">
+      <a href="menu.html">Меню</a>
+      <a href="booking.html">Бронь</a>
+      <a href="about.html">О нас</a>
+      <a href="events.html">События</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-meta">
+      <span class="hours-pill" data-hours></span>
+      <a class="btn" href="booking.html">Забронировать стол</a>
+    </div>
+  </header>
+
+  <div class="wrap page-hero">
+    <p class="eyebrow">Опционально</p>
+    <h1>Журнал</h1>
+    <p>Не блог «10 фактов о кофе». Короткие заметки смены: как варим, что за зерно, почему витрина пустеет к вечеру.</p>
+  </div>
+
+  <section>
+    <div class="wrap posts" style="grid-template-columns:1fr 1fr 1fr">
+      <article class="post-card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="">
+        <div class="body">
+          <span class="badge">рецепт</span>
+          <h3>Эспрессо за 25 секунд</h3>
+          <p>Почему не гоним «покрепче» и как просим помол у обжарщика.</p>
+        </div>
+      </article>
+      <article class="post-card">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80" alt="">
+        <div class="body">
+          <span class="badge">зерно</span>
+          <h3>Эфиопия, пока партия живая</h3>
+          <p>Что будет на фильтре на этой неделе и когда сменим лот.</p>
+        </div>
+      </article>
+      <article class="post-card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="">
+        <div class="body">
+          <span class="badge">зал</span>
+          <h3>Почему после 18:00 громче</h3>
+          <p>Ноутбуки до пяти. Вечером зал для встреч, не для дедлайна.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap"><a href="events.html">Календарь</a> · <a href="index.html">На главную</a></div>
+  </footer>
+  <div class="sticky-cta"><a class="btn" href="booking.html">Забронировать стол</a></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

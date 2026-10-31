@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — Окно</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Окно<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false">Меню</button>
+    <nav class="nav">
+      <a href="menu.html">Меню</a>
+      <a href="booking.html">Бронь</a>
+      <a href="about.html">О нас</a>
+      <a href="events.html">События</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="contacts.html" aria-current="page">Контакты</a>
+    </nav>
+    <div class="header-meta">
+      <span class="hours-pill" data-hours></span>
+      <a class="btn" href="booking.html">Забронировать стол</a>
+    </div>
+  </header>
+
+  <div class="wrap page-hero">
+    <p class="eyebrow">Визит</p>
+    <h1>Покровка, 18</h1>
+    <p>Ежедневно 08:00–22:00. 8 минут от Чистых прудов, вход с красной вывеской «Окно». Парковка городская, во дворе не ставим.</p>
+    <div class="btn-row">
+      <a class="btn" href="https://yandex.ru/maps/?text=Москва%20Покровка%2018" target="_blank" rel="noopener">Построить маршрут</a>
+      <a class="btn btn-ghost" href="tel:+74950001808">Позвонить</a>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap split">
+      <iframe class="map-embed" title="Карта" src="https://www.openstreetmap.org/export/embed.html?bbox=37.641%2C55.755%2C37.651%2C55.761&amp;layer=mapnik&amp;marker=55.758%2C37.646"></iframe>
+      <div>
+        <h2>Связь</h2>
+        <p><a href="tel:+74950001808">+7 495 000-18-08</a><br>
+          <a href="https://wa.me/74950001808">WhatsApp</a><br>
+          Instagram @okno.coffee</p>
+        <p>Бронь стола — <a href="booking.html">форма на сайте</a>. По телефону отвечаем, когда нет очереди на стойке.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap"><p class="fine">Кофейня «Окно»</p></div>
+  </footer>
+  <div class="sticky-cta"><a class="btn" href="booking.html">Забронировать стол</a></div>
+  <script src="js/main.js"></script>
+</body>
+</html>

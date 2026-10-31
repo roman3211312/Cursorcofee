@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Доставка — Окно</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Окно<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false">Меню</button>
+    <nav class="nav">
+      <a href="menu.html">Меню</a>
+      <a href="booking.html">Бронь</a>
+      <a href="about.html">О нас</a>
+      <a href="events.html">События</a>
+      <a href="delivery.html" aria-current="page">Доставка</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-meta">
+      <span class="hours-pill" data-hours></span>
+      <a class="btn" href="booking.html">Забронировать стол</a>
+    </div>
+  </header>
+
+  <div class="wrap page-hero">
+    <p class="eyebrow">Опциональный канал</p>
+    <h1>Доставка по центру</h1>
+    <p>Покровка, Чистые пруды, Китай-город, Басманный, Красные ворота. Минимум 700 ₽. Слоты до 20:30.</p>
+  </div>
+
+  <section>
+    <div class="wrap split">
+      <div>
+        <h2>Хорошо едет</h2>
+        <div class="hits">
+          <article class="hit">
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=200&q=80" alt="">
+            <div><strong>Фильтр с собой</strong><p>320 ₽</p></div>
+            <button class="btn" type="button" data-add="filter">В корзину</button>
+          </article>
+          <article class="hit">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=200&q=80" alt="">
+            <div><strong>Круассан с маслом</strong><p>280 ₽</p></div>
+            <button class="btn" type="button" data-add="croissant">В корзину</button>
+          </article>
+          <article class="hit">
+            <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?auto=format&fit=crop&w=200&q=80" alt="">
+            <div><strong>Гранола и йогурт</strong><p>420 ₽</p></div>
+            <button class="btn" type="button" data-add="granola">В корзину</button>
+          </article>
+        </div>
+      </div>
+      <div>
+        <h2>Оформление</h2>
+        <div id="cart"></div>
+        <p>Итого: <strong id="cart-total">0 ₽</strong></p>
+        <form class="form" id="delivery-form">
+          <label class="full">Адрес
+            <input type="text" name="address" required placeholder="Покровка, 10">
+          </label>
+          <label>Слот
+            <select name="slot">
+              <option>12:00–12:45</option>
+              <option>13:30–14:15</option>
+              <option selected>18:00–18:45</option>
+              <option>20:00–20:30</option>
+            </select>
+          </label>
+          <label>Телефон
+            <input type="tel" name="phone" required>
+          </label>
+          <button class="btn full" type="submit">Оформить заказ</button>
+        </form>
+        <div class="success" id="delivery-success">
+          <h2>Заказ принят</h2>
+          <p data-summary></p>
+          <p>Это демо без оплаты. На кухне подключите кассу и слоты.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap"><p>Нужен зал, не курьер? <a href="booking.html">Забронируйте стол</a>.</p></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
